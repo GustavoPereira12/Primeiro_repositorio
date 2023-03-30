@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Aula 06</title>
+</head>
+<body>
+    <h1> Lugares para viajar</h1>
+    <form method="post" action="mailto:gustavopereira595857@gmail.com">
+
+        <label for="nome">Nome:</label> 
+         <input type="text" id="nome" required="required">
+         <label for="sNome">Sobrenome</label>
+         <input type="text" id="sNome" required="required">
+         <br><br>
+         <label for="email">Email:</label>
+         <input type="email" id="email" size="50" placeholder="exemplo@gmail.com"> 
+         <br> <br>
+         <br><br>
+         <hr>
+         <h2>Destino da viagem</h2>
+         <input type="radio" name="gn" id="VN"> 
+         <label for="VN">Viagem nacional</label>
+         <br>
+         <input type="radio" name="gn" id="Vi">
+         <label for="Vi">Viagem internacional</label>
+         <br> <br>
+         <hr>
+         <h2> Locais da primeira viagem</h2>
+         <input type="checkbox" name="op1" id="op1">
+         <label for="op1">Grécia</label>
+          <br>
+         <input type="checkbox" name="op2" id="op2">
+         <label for="op2">Finlandia</label>
+         <br>
+         <input type="checkbox" name="op3" id="op3">
+         <label for="op3">Portugual</label>
+          <br>
+         <input type="checkbox" name="op4" id="op4">
+         <label for="op4">Los Angeles</label>
+         <br><br> 
+         <hr>
+         <!-- ultilizando elemento select -->
+         <h2> forma de pagamentos</h2>
+        
+         <select name="fPagamentos" id="fPagamentos">
+            
+               <option value="fp0" selected disabled>Formas de Pagamentos</option>
+               <option value="fp1">Cartão de Crédito</option>
+               <option value="fp2">Cartão de Débito</option>
+               <option value="fp3">Pix</option>
+               <option value="fp4">Cheque</option>
+               <option value="fp5">Boleto</option>
+            
+         </select>
+         <br><br>
+         <hr>
+        
+         <label for="cdd">Escolha sua cidade</label>
+         <input autocomplete="on" name="cdd" id="cdd"> 
+         <datalist id="cdd">
+            <option value="cd1">São paulo</option>
+            <option value="cd2">Rio de Janeiro</option>
+            <option value="cd3">Brasilia</option>
+            <option value="cd4">Bahia</option>
+            <option value="cd5">Alagoas</option>
+         </datalist>
+        
+         <input type="range" name="vlr1" id="vlr1">
+         10
+         
+         <p>Deixe sua sugestão</p>
+        <textarea name="sg1" id="sg1" cols="30" rows="10"
+         placeholder="Deixe seu comentario aqui." required></textarea>
+         <br><br>
+         <hr>
+
+
+        
+         <br><br> <input type="submit" value="Enviar">
+        
+
+
+
+</form>
+</body>
+</html>
